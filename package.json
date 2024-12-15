@@ -69,6 +69,11 @@
       "require": "./dist/group.js",
       "import": "./dist/group.mjs"
     },
+    "./unique": {
+      "types": "./dist/unique.d.ts",
+      "require": "./dist/unique.js",
+      "import": "./dist/unique.mjs"
+    },
     "./package.json": "./package.json"
   },
   "typesVersions": {
@@ -78,6 +83,9 @@
       ],
       "group": [
         "dist/group.d.ts"
+      ],
+      "unique": [
+        "dist/unique.d.ts"
       ]
     }
   },
