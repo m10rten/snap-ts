@@ -1,5 +1,11 @@
 # snap-ts
 
+## 0.1.1
+
+### Patch Changes
+
+- d3be9b0: update readme files
+
 ## 0.1.0
 
 ### Minor Changes
