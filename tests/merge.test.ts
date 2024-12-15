@@ -1,6 +1,6 @@
 import { merge } from "@/merge"; // Adjust the import path as needed
 
-describe("merge function", () => {
+describe("merge", () => {
   // Tests for merging objects
   describe("merging objects", () => {
     it("should merge two simple objects", () => {

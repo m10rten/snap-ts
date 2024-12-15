@@ -18,6 +18,7 @@ npm install snap-ts
 
 - **Merge**: Seamlessly merge objects or concatenate arrays with type safety.
 - **GroupBy**: Efficiently group arrays of objects based on specified keys.
+- **Unique**: Filter unique elements from an array or Set, with optional key-based uniqueness for objects.
 
 ---
 
@@ -27,3 +28,4 @@ Explore detailed documentation for each utility:
 
 - [**Merge**](./merge.md): Flexible merging of objects and arrays.
 - [**GroupBy**](./group.md): Group arrays of objects by one or more keys.
+- [**Unique**](./unique.md): Get the first unique value in an array or set.

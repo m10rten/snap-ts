@@ -28,6 +28,7 @@ For more in depth documentation about the features, check out [the full docs](ht
 
 - **`merge`**: Combines objects or arrays.
 - **`groupBy`**: Groups arrays of objects based on specified keys.
+- **`unique`**: Filters unique elements from an array or Set, with optional key-based uniqueness for object types.
 
 ---
 
@@ -64,5 +65,33 @@ const grouped = groupBy(data, "category");
 // [
 //   [{ id: 1, category: "A", value: 10 }, { id: 3, category: "A", value: 30 }],
 //   [{ id: 2, category: "B", value: 20 }]
+// ]
+```
+
+### `unique`
+
+Filters unique elements from an array or Set, with optional key-based uniqueness for object types.
+
+**Usage**:
+
+```ts
+import { unique } from "snap-ts";
+
+// Simple array
+const numbers = [1, 2, 2, 3, 4, 4, 5];
+const uniqueNumbers = unique(numbers);
+console.log(uniqueNumbers); // [1, 2, 3, 4, 5]
+
+// Array of objects with key-based uniqueness
+const users = [
+  { id: 1, name: "Alice" },
+  { id: 2, name: "Bob" },
+  { id: 1, name: "Charlie" },
+];
+const uniqueUsers = unique(users, ["id"]);
+console.log(uniqueUsers);
+// [
+//   { id: 1, name: "Alice" },
+//   { id: 2, name: "Bob" }
 // ]
 ```
