@@ -1,5 +1,11 @@
 # snap-ts
 
+## 0.2.2
+
+### Patch Changes
+
+- 95ea029: Updated how `unique` returns values for each iterable type (Set|Array|Map);
+
 ## 0.2.1
 
 ### Patch Changes
