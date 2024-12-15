@@ -1,6 +1,6 @@
-# TryKit: `merge`
+# snap-ts: `merge`
 
-The `merge` utility in the `trykit` package provides a streamlined way to combine objects or concatenate arrays. It automatically detects the input type (array or object) and performs the appropriate operation.
+The `merge` utility in the `snap-ts` package provides a streamlined way to combine objects or concatenate arrays. It automatically detects the input type (array or object) and performs the appropriate operation.
 
 ---
 
@@ -50,7 +50,7 @@ export function merge<T>(...items: (T & {})[]): T | T[] {
 ### Example 1: Merging Objects
 
 ```typescript
-import { merge } from "trykit";
+import { merge } from "snap-ts";
 
 // Merge two objects
 const obj1 = { a: 1, b: 2 };
@@ -65,7 +65,7 @@ console.log(result); // Output: { a: 1, b: 3, c: 4 }
 ### Example 2: Concatenating Arrays
 
 ```typescript
-import { merge } from "trykit";
+import { merge } from "snap-ts";
 
 // Concatenate arrays
 const arr1 = [1, 2, 3];
@@ -151,8 +151,8 @@ console.log(result); // Output: { a: { y: 2 }, b: 2, c: 3 } // Shallow merge
 
 ## Installation
 
-To install `trykit`, run:
+To install `snap-ts`, run:
 
 ```bash
-npm install trykit
+npm install snap-ts
 ```

@@ -64,12 +64,20 @@
       "require": "./dist/merge.js",
       "import": "./dist/merge.mjs"
     },
+    "./group": {
+      "types": "./dist/group.d.ts",
+      "require": "./dist/group.js",
+      "import": "./dist/group.mjs"
+    },
     "./package.json": "./package.json"
   },
   "typesVersions": {
     "*": {
       "merge": [
         "dist/merge.d.ts"
+      ],
+      "group": [
+        "dist/group.d.ts"
       ]
     }
   },
