@@ -26,4 +26,4 @@ npm install snap-ts
 Explore detailed documentation for each utility:
 
 - [**Merge**](./merge.md): Flexible merging of objects and arrays.
-- [**GroupBy**](./groupBy.md): Group arrays of objects by one or more keys.
+- [**GroupBy**](./group.md): Group arrays of objects by one or more keys.
