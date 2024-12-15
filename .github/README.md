@@ -27,6 +27,7 @@ For more in depth documentation about the features, check out [the full docs](ht
 ### Functions and Classes
 
 - **`merge`**: Combines objects or arrays.
+- **`groupBy`**: Groups arrays of objects based on specified keys.
 
 ---
 
@@ -44,3 +45,24 @@ import { merge } from "trykit";
 const combined = merge({ a: 1 }, { b: 2 }); // { a: 1, b: 2 }
 ```
 
+### `groupBy`
+
+Groups arrays of objects based on specified keys.
+
+**Usage**:
+
+```ts
+import { groupBy } from "snap-ts";
+
+const data = [
+  { id: 1, category: "A", value: 10 },
+  { id: 2, category: "B", value: 20 },
+  { id: 3, category: "A", value: 30 },
+];
+
+const grouped = groupBy(data, "category");
+// [
+//   [{ id: 1, category: "A", value: 10 }, { id: 3, category: "A", value: 30 }],
+//   [{ id: 2, category: "B", value: 20 }]
+// ]
+```
