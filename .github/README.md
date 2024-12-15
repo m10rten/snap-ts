@@ -28,7 +28,7 @@ For more in depth documentation about the features, check out [the full docs](ht
 
 - **`merge`**: Combines objects or arrays.
 - **`groupBy`**: Groups arrays of objects based on specified keys.
-- **`unique`**: Filters unique elements from an array or Set, with optional key-based uniqueness for object types.
+- **`unique`**: Filters unique elements from an Array, Map or Set, with optional key-based uniqueness for object types.
 
 ---
 
@@ -70,7 +70,7 @@ const grouped = groupBy(data, "category");
 
 ### `unique`
 
-Filters unique elements from an array or Set, with optional key-based uniqueness for object types.
+Filters unique elements from an Array, Map or Set, with optional key-based uniqueness for object types.
 
 **Usage**:
 

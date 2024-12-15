@@ -2,7 +2,7 @@
 
 The `unique` utility in the `snap-ts` package provides a flexible way to filter unique elements from an array or Set, with optional key-based uniqueness for object types.
 
-> The `unique` function always returns an array with values.
+> The `unique` function returns the type that was used as input, `Set<T>` or `Array<T>` or `Map<T>`.
 
 ---
 
@@ -26,12 +26,15 @@ The `unique` function offers:
  * Returns an array of unique elements from the input data.
  *
  * @template T The type of elements in the input data.
- * @param data The input data, which can be an array or a Set.
+ * @param data The input data, which can be an Array, Map or a Set.
  * @param keys Optional. An array of keys to use for determining uniqueness.
  *             This parameter is only allowed when T is an object type.
  * @returns An array containing unique elements from the input data.
  */
-export function unique<T>(data: T[] | Set<T>, keys?: (T extends object ? keyof T : never)[]): T[];
+export function unique<K, T>(
+  data: T[] | Set<T> | Map<K, T>,
+  keys?: (T extends object ? keyof T : never)[],
+): T[] | Set<T> | Map<K, T>;
 ```
 
 ---
