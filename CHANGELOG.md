@@ -1,5 +1,11 @@
 # snap-ts
 
+## 0.2.1
+
+### Patch Changes
+
+- 4874cd3: Updated package.json types
+
 ## 0.2.0
 
 ### Minor Changes

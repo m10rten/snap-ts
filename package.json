@@ -1,6 +1,6 @@
 {
   "name": "snap-ts",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Snapping tools to ease data mutation for typescript",
   "private": false,
   "types": "./dist/index.d.ts",
